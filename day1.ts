@@ -30,7 +30,7 @@ for (let i = dogLen - 1; i >= 0; i--) {
 // Write a function findMax(arr) that takes an array of numbers and returns the largest one.
 
 const myNumbers = [6, 4, 8, 0, 6, 9, 93, 56, 34, 2, 21, 87];
-let maxNumber = 0;
+let maxNumber = myNumbers[0];
 for (let i = 0; i < myNumbers.length; i++) {
   const targetedNumber = myNumbers[i];
   if (targetedNumber > maxNumber) {
