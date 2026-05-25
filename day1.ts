@@ -13,4 +13,29 @@ const resultReverse = result.reverse();
 
 //========JavaScript Join (Array)==========
 const joinReverseResult = resultReverse.join(" ");
-console.log(joinReverseResult);
+// console.log(joinReverseResult);
+
+// ========Using For Loop============
+const dog: string = "doggy";
+const dogLen = dog.length;
+
+let reverseDog = "";
+for (let i = dogLen - 1; i >= 0; i--) {
+  reverseDog += dog[i];
+}
+
+// console.log(reverseDog);
+
+//Problem2: Find the largest Number
+// Write a function findMax(arr) that takes an array of numbers and returns the largest one.
+
+const myNumbers = [6, 4, 8, 0, 6, 9, 93, 56, 34, 2, 21, 87];
+let maxNumber = 0;
+for (let i = 0; i < myNumbers.length; i++) {
+  const targetedNumber = myNumbers[i];
+  if (targetedNumber > maxNumber) {
+    maxNumber = targetedNumber;
+  }
+}
+
+// console.log(maxNumber);
